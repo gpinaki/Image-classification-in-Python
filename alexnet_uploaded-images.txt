@@ -1,0 +1,111 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 9 key-value pairs.
+Below are 9 of them:
+ 1 key:               Coffe_cup_01.jpg  label:                  coffe cup
+ 2 key:                     Dog_01.jpg  label:                        dog
+ 3 key:                     dog_03.jpg  label:                        dog
+ 4 key:                     Dog_02.jpg  label:                        dog
+ 5 key:                     dog_04.jpg  label:                        dog
+ 6 key:                   Tiger_01.jpg  label:                      tiger
+ 7 key:                     Man_01.jpg  label:                        man
+ 8 key:                     Dog_05.jpg  label:                        dog
+ 9 key:                     Man_02.jpg  label:                        man
+
+     MATCH:
+
+                    dog_03.jpg: 
+Real:                        dog   Classifier:              eskimo dog, husky
+
+                  Tiger_01.jpg: 
+Real:                      tiger   Classifier:         tiger, panthera tigris
+
+ NOT A MATCH:
+
+              Coffe_cup_01.jpg: 
+Real:                  coffe cup   Classifier:                     coffee mug
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:               golden retriever
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:               golden retriever
+
+                    dog_04.jpg: 
+Real:                        dog   Classifier: malamute, malemute, alaskan malamute
+
+                    Man_01.jpg: 
+Real:                        man   Classifier:       bow tie, bow-tie, bowtie
+
+                    Dog_05.jpg: 
+Real:                        dog   Classifier:               golden retriever
+
+                    Man_02.jpg: 
+Real:                        man   Classifier:          suit, suit of clothes
+
+# Total Images 9 # Matches: 2 # NOT Matches: 7
+
+     MATCH:
+
+                    dog_03.jpg: 
+Real:                        dog   Classifier:              eskimo dog, husky  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                  Tiger_01.jpg: 
+Real:                      tiger   Classifier:         tiger, panthera tigris  
+PetLabelDog: 0  ClassLabelDog: 0
+
+ NOT A MATCH:
+
+              Coffe_cup_01.jpg: 
+Real:                  coffe cup   Classifier:                     coffee mug  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_01.jpg: 
+Real:                        dog   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Dog_02.jpg: 
+Real:                        dog   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    dog_04.jpg: 
+Real:                        dog   Classifier: malamute, malemute, alaskan malamute  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Man_01.jpg: 
+Real:                        man   Classifier:       bow tie, bow-tie, bowtie  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    Dog_05.jpg: 
+Real:                        dog   Classifier:               golden retriever  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    Man_02.jpg: 
+Real:                        man   Classifier:          suit, suit of clothes  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 9 # Matches: 2 # NOT Matches: 7
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  9  N Dog Images:  5  N NotDog Images:  4 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  20.0
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  9  N Dog Images:  5  N NotDog Images:  4 
+Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:  20.0
+
+
+*** Results Summary for CNN Model Architecture ALEXNET ***
+N Images            :   9
+N Dog Images        :   5
+N Not Dog Images    :   4
+% of pct correct dogs :100.0
+% of pct match :22.22222222222222
+% of pct correct breed :20.0
+% of pct correct notdogs :100.0
+
+** Total Elapsed Runtime: 0:0:0
